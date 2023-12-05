@@ -6,8 +6,8 @@ exports.verify_mail = async (email, link) => {
        const transpoter = nodemailer.createTransport({
         service : "Gmail",
         auth : {
-            user : process.env.EMAIL,
-            pass : process.env.PASS
+            user : process.env.EMAIL || "deramodili@gmail.com",
+            pass : process.env.PASS || "wpyp ypbf pqwb akap"
         }
         
        })

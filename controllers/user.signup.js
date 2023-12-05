@@ -63,9 +63,11 @@ try {
     const token = await new_token.save()
     console.log(token)
     const link = `http://localhost:3000/users/verify_account/${token.token}`
-    await verify_mail(user.email, link)
-    
-    res.send('mail sent successfully')
+    const verufucation = await verify_mail(user.email, link)
+    if (!verufucation) {
+        return
+    }
+    res.send('check you email for a verification mail')
  
 } catch (err) {
     console.log(err.message)
