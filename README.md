@@ -9,6 +9,16 @@ more like a bank app
 
 
 to do list  
-hostin the app url  done 
-authorisation and authentication
+ adding images
+
 Users can set their financial goals and track the progress.
+
+
+how far i have gone
+
+email validation 
+creating accounts by users
+
+
+
+but i have done a bit of a lot though.
